@@ -49,7 +49,7 @@ function App() {
             <Droppable droppableId="dogs">
               {(provided) => (
                 <ul {...provided.droppableProps} ref={provided.innerRef}>
-                  {dogs.map((breed, index) => {
+                  {data.map((breed, index) => {
                     return (
                       <Draggable
                         key={breed.id.toString()}
